@@ -1,0 +1,10 @@
+services:
+  netflix-analysis:
+    image: yourdockerhubusername/netflix-analysis:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/app/data:ro
+      - ./output:/app/output
+    command: python main.py --data data/netflix_titles.csv --output output/figures
