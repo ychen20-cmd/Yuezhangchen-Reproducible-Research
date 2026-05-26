@@ -2,9 +2,9 @@
 title: "Reproducing Netflix EDA: From R to Python"
 subtitle: "A reproduction and extension of Kanigara (2021)"
 author:
-  - name: "Member 1 — Student ID"
-  - name: "Member 2 — Student ID"
-  - name: "Member 3 — Student ID"
+  - name: "Yuhan Wen"
+  - name: "Linh Tran"
+  - name: "Yuezhang Chen"
 date: today
 format:
   html:
@@ -240,11 +240,11 @@ syntax differs significantly.
 This project is fully reproducible via Docker:
 
 ```bash
-docker pull yourdockerhubusername/netflix-analysis:latest
+docker pull yuhan023/netflix-analysis:latest
 docker run --rm \
   -v $(pwd)/data:/app/data \
   -v $(pwd)/output:/app/output \
-  yourdockerhubusername/netflix-analysis:latest
+  yuhan023/netflix-analysis:latest
 ```
 
 Or using Make:
@@ -253,7 +253,7 @@ Or using Make:
 make install && make run
 ```
 
-Full source code: [github.com/your-org/your-repo](https://github.com/your-org/your-repo)
+Full source code: [github.com/ywen2-dot/the-project-of-reproducible-research](https://github.com/ywen2-dot/the-project-of-reproducible-research)
 
 ---
 
@@ -264,3 +264,5 @@ Full source code: [github.com/your-org/your-repo](https://github.com/your-org/yo
 
 - Bansal, S. (2021). *Netflix Movies and TV Shows* [Dataset].
   Kaggle. https://www.kaggle.com/datasets/shivamb/netflix-shows
+## Commit message:
+Update final report authors and repository links
